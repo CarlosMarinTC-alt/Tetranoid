@@ -13,10 +13,22 @@ public class Salchicha : MonoBehaviour
     void Update()
     {
         int bloquesRestantes = GameObject.FindGameObjectsWithTag("Block").Length;
+        string Escena_actual = SceneManager.GetActiveScene().name;
 
         if (bloquesRestantes == 0)
         {
-            SceneManager.LoadScene("Level_complete");
+            if (Escena_actual == "Level1")
+            {
+                SceneManager.LoadScene("Level2");
+            }
+            else if (Escena_actual == "Level2")
+            {
+                SceneManager.LoadScene("Level3");
+            }
+            else
+            {
+                SceneManager.LoadScene("Level_complete");
+            }
         }
     }
 }

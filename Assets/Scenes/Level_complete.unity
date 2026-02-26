@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -959.78204, y: -540}
-  m_SizeDelta: {x: 15.4991, y: -3.457}
+  m_AnchoredPosition: {x: -959.78204, y: -539.73}
+  m_SizeDelta: {x: 15.4991, y: -2.9096}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &108272446
 MonoBehaviour:
@@ -176,9 +176,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "No hay mas niveles, por ahora disfuta lo que tenemos y muchas gracias
-    por jugar.\n\nPor cierto, \xBFalguien quiere que ponga chiste a lo loco o lo
-    dejamos simple?"
+  m_text: "Muchas gracias por jugar.\n\nPor cierto, \xBFalguien quiere que ponga
+    chiste a lo loco o lo dejamos simple?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
