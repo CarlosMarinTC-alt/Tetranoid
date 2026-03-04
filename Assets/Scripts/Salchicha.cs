@@ -21,10 +21,12 @@ public class Salchicha : MonoBehaviour
             {
                 SceneManager.LoadScene("Level2");
             }
+
             else if (Escena_actual == "Level2")
             {
                 SceneManager.LoadScene("Level3");
             }
+            
             else
             {
                 SceneManager.LoadScene("Level_complete");

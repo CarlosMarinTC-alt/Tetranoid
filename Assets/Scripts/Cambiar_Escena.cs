@@ -12,17 +12,11 @@ public class Cambiar_Escena : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0))
         {
             string Escena_actual = SceneManager.GetActiveScene().name;
 
-            if (Escena_actual == "Game_Over")
-            {
-
-                SceneManager.LoadScene("Title");
-            }
-
-            else if(Escena_actual == "Level_complete")
+            if (Escena_actual == "Game_Over" || Escena_actual == "Level_complete")
             {
 
                 SceneManager.LoadScene("Title");
