@@ -8,7 +8,9 @@ TagManager:
   - Block
   - Floor
   - Disapear
+  - PowerUpBlock
   - PowerUp
+  - player
   layers:
   - Default
   - TransparentFX
