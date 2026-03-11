@@ -1662,6 +1662,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 805b754d271930642bcf8f444b4e02af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUpSuperBall
+  reboteScript: {fileID: 1656176819}
+  posisionPowerUp1: {x: 0, y: 2.27, z: 0}
+  fueraPantalla1: {x: 0, y: -5, z: 0}
+  speedGravity: 0.5
+  rb_pu: {fileID: 1104875427}
+  whichPowerUp: 1
+  powerUp: {fileID: 1104875422}
 --- !u!50 &1104875427
 Rigidbody2D:
   serializedVersion: 5
@@ -1978,6 +1985,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   velocidad: 5
+  min: -6.3
+  max: 6.3
 --- !u!50 &1227729101
 Rigidbody2D:
   serializedVersion: 5
@@ -2591,13 +2600,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d37ffef23e49f8541b40103a92d95c36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rebote
+  powerUpScript: {fileID: 1104875424}
   speed: 5
-  speedGravity: 2
-  rb_pu: {fileID: 0}
   Disapear: 0
   baseColor: {r: 1, g: 1, b: 1, a: 1}
   oneColor: {r: 1, g: 0, b: 0, a: 1}
-  powerUp1: {fileID: 0}
+  powerUp1: {fileID: 1104875422}
 --- !u!1 &1664512506
 GameObject:
   m_ObjectHideFlags: 0
