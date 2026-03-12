@@ -4,10 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class Rebote : MonoBehaviour
 {
+    public PowerUpDestruction powerUpScript;
     public float speed = 10f;
-    public float speedGravity = 2f;
     private Rigidbody2D rb;
-    public Rigidbody2D rb_pu;
     public bool Disapear = false;
     public Color baseColor = Color.white;
     public Color oneColor = Color.red;
@@ -15,8 +14,6 @@ public class Rebote : MonoBehaviour
     private Vector2 direccionAntesDeChoque; // Aquí guardamos el rumbo
     public GameObject powerUp1;
 
-    Vector3 posisionPowerUp = new Vector3(0f, 2.27f,0f);
-    Vector3 fueraPantalla = new Vector3(0f, -5f,0f);
     Transform powerUp1Transform;
 
     void Start()
@@ -64,13 +61,7 @@ public class Rebote : MonoBehaviour
 
         if (collision.gameObject.CompareTag("PowerUpBlock"))
         {
-            rb_pu.linearVelocity = fueraPantalla * speedGravity;
-            powerUp1Transform.position = posisionPowerUp;
-
-            float step = speedGravity * Time.deltaTime;
-
-            // powerUp1Transform.position = Vector3.MoveTowards(powerUp1Transform.position, fueraPantalla, step);
-            powerUp1Transform.position = Vector2.down;
+            powerUpScript.AparecerPowerUp();
 
             Destroy(collision.gameObject);
         }
